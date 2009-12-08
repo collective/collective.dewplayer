@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.dewplayer">
+
+    <browser:resourceDirectory
+        name="collective.dewplayer"
+        directory="dewplayer"
+        />
+
+</configure>

@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.dewplayer">
+
+    <genericsetup:registerProfile
+        name="default"
+        title="collective.dewplayer default profile"
+        directory="profiles/default"
+        description='Extension profile'
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    />
+
+</configure>
