@@ -4,6 +4,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.dewplayer">
 
+    <include package=".browser" />
+
     <genericsetup:registerProfile
         name="default"
         title="collective.dewplayer default profile"
