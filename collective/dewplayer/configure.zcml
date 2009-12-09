@@ -5,7 +5,7 @@
     i18n_domain="collective.dewplayer">
 
     <include package=".browser" />
-
+    <!-- Next release may have need of a profile
     <genericsetup:registerProfile
         name="default"
         title="collective.dewplayer default profile"
@@ -13,6 +13,6 @@
         description='Extension profile'
         provides="Products.GenericSetup.interfaces.EXTENSION"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-    />
+    />-->
 
 </configure>
