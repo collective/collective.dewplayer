@@ -2,7 +2,7 @@ Introduction
 ============
 
 This collective module register a zope directory resource containing the
-wonderful mp3 flash player Dewplayer, developed by alsacréation (http://www.alsacreations.fr/dewplayer-en).
+wonderful mp3 flash player Dewplayer, developed by alsacreation (http://www.alsacreations.fr/dewplayer-en).
 
 Dewplayer version - downloaded 2009-12-08
 
@@ -13,13 +13,13 @@ Add collective.dewplayer to your buildout as normal. See
 http://plone.org/documentation/tutorial/buildout. Don't forget to load the
 configure.zcml file.
 
-At the moment this module doesn't add any feature to plone. It is primary use as
+At the moment this module doesn't add any feature to Plone. It is primary use as
 resource package.
 
 Usage
 -----
 
-Dewplayer offer several flash player includes in the directory resource:
+Dewplayer offer several flash players included in the directory resource:
 
    * Mini (160x20) - dewplayer-mini.swf
    * Classic (200x20) - dewplayer.swf
