@@ -5,14 +5,14 @@
     i18n_domain="collective.dewplayer">
 
     <include package=".browser" />
-    <!-- Next release may have need of a profile
+
     <genericsetup:registerProfile
         name="default"
         title="collective.dewplayer default profile"
         directory="profiles/default"
-        description='Extension profile'
+        description='Add dewplayer view on file'
         provides="Products.GenericSetup.interfaces.EXTENSION"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-    />-->
+    />
 
 </configure>

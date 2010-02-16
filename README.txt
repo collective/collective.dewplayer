@@ -13,8 +13,9 @@ Add collective.dewplayer to your buildout as normal. See
 http://plone.org/documentation/tutorial/buildout. Don't forget to load the
 configure.zcml file.
 
-At the moment this module doesn't add any feature to Plone. It is primary use as
-resource package.
+Install it throw the QuickInstaller to add a 'dewplayer' view to File content type.
+This view let's you listen to any mp3 file and can be set as default with the display 
+drop down menu.
 
 Usage
 -----
@@ -37,6 +38,7 @@ For example, to include a classic player (using dewplayer.swf) for http://mysite
 
 See alsacreations.fr for full documentation: http://www.alsacreations.fr/dewplayer-en [english]
 or http://www.alsacreations.fr/dewplayer [french]
+
 
 Todo
 ----

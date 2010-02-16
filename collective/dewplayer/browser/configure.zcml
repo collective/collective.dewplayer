@@ -8,4 +8,13 @@
         directory="dewplayer"
         />
 
+    <browser:page
+        name="dewplayer"
+        for="Products.ATContentTypes.interface.IATFile"
+        class=".file.File"
+        permission="zope2.View"
+        template="file.pt"
+        />
+
+
 </configure>

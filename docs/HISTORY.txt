@@ -4,7 +4,7 @@ Changelog
 0.2 - Unreleased
 ------------------------
 
--
+- Add a dewplayer view for File content type [toutpt]
 
 0.1 - December 12, 2009
 ------------------------
