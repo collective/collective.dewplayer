@@ -6,8 +6,21 @@ wonderful mp3 flash player Dewplayer, developed by alsacreation (http://www.alsa
 
 Dewplayer version - downloaded 2009-12-08
 
+.. contents::
+
+Credits
+===============
+|makinacom|_
+
+* `Planet Makina Corpus <http://www.makina-corpus.org>`_
+* `Contact us <mailto:python@makina-corpus.org>`_
+
+.. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
+.. _makinacom:  http://www.makina-corpus.com
+
+
 Installation
-------------
+============
 
 Add collective.dewplayer to your buildout as normal. See
 http://plone.org/documentation/tutorial/buildout. Don't forget to load the
@@ -18,7 +31,7 @@ This view let's you listen to any mp3 file and can be set as default with the di
 drop down menu.
 
 Usage
------
+=======
 
 Dewplayer offer several flash players included in the directory resource:
 
@@ -41,7 +54,7 @@ or http://www.alsacreations.fr/dewplayer [french]
 
 
 Todo
-----
+=====
 
    * Add some python helpers for the differents players.
 
