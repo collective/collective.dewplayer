@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='collective.dewplayer',
       version=version,
-      description="A simple package using Dewplayer for video content by Makina Corpus",
+      description="A simple package using Dewplayer for video content - By Makina Corpus",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
