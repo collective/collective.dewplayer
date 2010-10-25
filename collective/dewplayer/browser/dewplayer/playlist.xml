@@ -12,7 +12,7 @@
           <location>mp3/moldau.mp3</location>
           <creator>Bedrich Smetana</creator>
           <album>Má Vlast</album>
-          <title>La Moldau (Vltava)</title>
+          <title>La Moldau (Smetana)</title>
           <annotation>I love this song</annotation>
           <duration>32000</duration>
           <image>covers/smetana.jpg</image>
@@ -23,7 +23,7 @@
         <track>
           <location>mp3/cesaria.mp3</location>
           <creator>Cesaria Evora</creator>
-          <album>Voz d'Amor</album>
+          <album>Voz d'Amor (Cesaria Evora)</album>
           <title>Saia Travada</title>
           <annotation></annotation>
           <duration></duration>
@@ -48,7 +48,7 @@
           <location>mp3/everywhere.mp3</location>
           <creator>Michelle Branch</creator>
           <album>Everywhere</album>
-          <title>Everywhere</title>
+          <title>Everywhere (Michelle Branch)</title>
           <annotation></annotation>
           <duration></duration>
           <image>covers/everywhere.jpg</image>
@@ -118,7 +118,7 @@
           <location>mp3/hussard.mp3</location>
           <creator>Jean-Claude Petit</creator>
           <album>Le Hussard sur le Toit</album>
-          <title>Générique fin</title>
+          <title>Le Hussard sur le Toit</title>
           <annotation></annotation>
           <duration></duration>
           <image>covers/hussard.jpg</image>
@@ -129,7 +129,7 @@
           <location>mp3/vinci.mp3</location>
           <creator>Dan Brown</creator>
           <album>Da Vinci Code</album>
-          <title>Bande-Annonce</title>
+          <title>Da Vinci Code</title>
           <annotation></annotation>
           <duration></duration>
           <image>covers/vinci.jpg</image>
@@ -140,7 +140,7 @@
           <location>mp3/rachmaninov.mp3</location>
           <creator>Rachmaninov</creator>
           <album>Piano Concertos</album>
-          <title>Concerto pour Piano n°2</title>
+          <title>Concerto pour Piano (Rachmaninov)</title>
           <annotation></annotation>
           <duration></duration>
           <image>covers/rachma.jpg</image>

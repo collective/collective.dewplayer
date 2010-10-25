@@ -1,7 +1,13 @@
 Changelog
 =========
 
-0.2 - Unreleased
+1.0 - October 25, 2010
+------------------------
+
+- Update players with new versions from www.alsacreations.fr.
+- Plone 4 compatibility is ok (nothing to do)
+
+0.2 - April 4, 2010
 ------------------------
 
 - Add a dewplayer view for File content type [toutpt]

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Player</title>
+<style type="text/css">
+html {
+  background:url(zdewplayer.jpg) no-repeat bottom right;
+  height:100%;
+  padding:0;
+  margin:0;
+  font-family: Arial,Helvetica,Verdana,Sans-serif,Sans-serif;
+  font-size:11px;
+}
+body {
+  height:100%;
+  padding:0;
+  margin:0;
+}
+h1 {
+  font-family:"Myriad","Myriad Pro",Georgia,Helvetica,Sans-serif;
+  color:#eee;
+  padding-top:3em;
+  padding-bottom:2em;
+  margin:0;
+}
+h2 {
+  text-align:left;
+  color:#ccc;
+}
+#content {
+  margin-left:15%;
+  width:500px;
+  text-align:center;
+}
+a {
+  color:#369;
+  text-decoration:none;
+}
+</style>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+function play() {
+  var dewp = document.getElementById("player");
+  if(dewp!=null) dewp.dewplay();
+}
+function go(track) {
+  var dewp = document.getElementById("player");
+  if(dewp!=null) dewp.dewgo(track);
+}
+function stop() {
+  var dewp = document.getElementById("player");
+  if(dewp!=null) dewp.dewstop();
+}
+function pause() {
+  var dewp = document.getElementById("player");
+  if(dewp!=null) dewp.dewpause();
+}
+function next() {
+  var dewp = document.getElementById("player");
+  if(dewp!=null) dewp.dewnext();
+}
+function prev() {
+  var dewp = document.getElementById("player");
+  if(dewp!=null) dewp.dewprev();
+}
+</script>
+</head>
+
+<body>
+
+<div id="content">
+<h1><img src="zdewplayer.png" alt="Dewplayer" /></h1>
+  
+  <h2>Lecteur</h2>
+  
+  <div id="player_content">
+  <noscript>
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="303" height="113" id="player" align="middle">
+  <param name="allowScriptAccess" value="sameDomain" />
+  <param name="movie" value="dewplayer-vinyl.swf" />
+  <param name="flashvars" value="xml=playlist-vinyl.xml&javascript=on" />
+  <param name="quality" value="high" />
+  <param name="bgcolor" value="#ffffff" />
+  <param name="wmode" value="transparent" />
+  <embed src="dewplayer-vinyl.swf" flashvars="xml=playlist-vinyl.xml&javascript=on" wmode="transparent" quality="high" bgcolor="#ffffff" width="303" height="113" name="player" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+  </object>
+  </noscript>
+  </div>
+  
+  <br /><br />
+  
+  <h2>Actions JavaScript</h2>
+  
+  <input type="button" onclick="play();" value="Play" />
+  <input type="button" onclick="go(1);" value="Play(1)" />
+  <input type="button" onclick="go(2);" value="Play(2)" />
+  <input type="button" onclick="go(3);" value="Play(3)" />
+  <input type="button" onclick="go(4);" value="Play(4)" /><br />
+  <input type="button" onclick="stop();" value="Stop" />
+  <input type="button" onclick="pause();" value="Pause" />
+  <input type="button" onclick="next();" value="Next" />
+  <input type="button" onclick="prev();" value="Prev" />
+  
+  <h2>Playlist</h2>
+
+  <p><a href="playlist-vinyl.xml">playlist-vinyl.xml</a></p>
+
+</div>
+
+<script type="text/javascript">
+var flashvars = {
+  xml: "playlist-vinyl.xml",
+  javascript:"on",
+};
+var params = {
+  wmode: "transparent"
+};
+var attributes = {
+  id: "player"
+};
+swfobject.embedSWF("dewplayer-vinyl.swf", "player_content", "303", "113", "9.0.0", false, flashvars, params, attributes);
+</script>
+
+</body>
+</html>

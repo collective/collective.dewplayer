@@ -1,10 +1,11 @@
 Introduction
 ============
 
-This collective module register a zope directory resource containing the
-wonderful mp3 flash player Dewplayer, developed by alsacreation (http://www.alsacreations.fr/dewplayer-en).
+This module registers a zope directory resource containing the wonderful mp3 flash player Dewplayer,
+developed by alsacreation (http://www.alsacreations.fr/dewplayer-en), and add a dewplayer view for File content type.
 
-Dewplayer version - downloaded 2009-12-08
+Dewplayer version - downloaded 2010-10-25
+Tested with: : Plone 3, Plone 4.0
 
 .. contents::
 
@@ -38,8 +39,10 @@ Dewplayer offer several flash players included in the directory resource:
    * Mini (160x20) - dewplayer-mini.swf
    * Classic (200x20) - dewplayer.swf
    * Multi (240x20) - dewplayer-multi.swf
+   * Multi Rect (240x20) - dewplayer-rect.swf
    * Playlist (240x200) - dewplayer-playlist.swf
    * Bubble (250x65) - dewplayer-bubble.swf
+   * Vinyl (303x113) - dewplayer-vinyl.swf
 
 For example, to include a classic player (using dewplayer.swf) for http://mysite.com/myaudio.mp3 :
 

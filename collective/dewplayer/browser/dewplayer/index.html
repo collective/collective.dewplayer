@@ -36,22 +36,35 @@ h1 {
   text-align:left;
   margin-top:3em;
 }
+ul {
+	text-align:left;
+}
+a {
+	text-decoration:none;
+	color:#369;
+}
 </style>
+
 </head>
 
 <body>
 
 <div id="content">
-
-  <h1><img src="zdewplayer.png" alt="Dewplayer" /></h1>
-
-	<object type="application/x-shockwave-flash" data="dewplayer-playlist.swf" width="240" height="200" id="dewplayer" name="dewplayer">
-	<param name="wmode" value="transparent" />
-	<param name="movie" value="dewplayer-playlist.swf" />
-	<param name="flashvars" value="showtime=true&autoreplay=true&xml=playlist.xml" />
-	</object>
 	
+	<h1><img src="zdewplayer.png" alt="Dewplayer" /></h1>
+  
+	<ul>
+		<li><a href="index-xhtml.htm">Classic XHTML integration</a></li>
+		<li><a href="index-bubble.htm">Bubble</a></li>
+		<li><a href="index-playlist.htm">Playlist</a></li>
+		<li><a href="index-swfobject.htm">Classic with swfobject</a></li>
+		<li><a href="index-swfobject-js.htm">Classic with swfobject and JavaScript controls</a></li>
+	</ul>
+	
+	<p>Made by <a href="http://www.blup.fr">Dew</a> in <a href="http://www.alsacreations.fr/dewplayer">Alsacreations</a></p>
+
 </div>
+
 
 </body>
 </html>
