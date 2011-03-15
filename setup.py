@@ -27,5 +27,8 @@ setup(name='collective.dewplayer',
       ],
       entry_points="""
       # -*- Entry points: -*-
+
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
