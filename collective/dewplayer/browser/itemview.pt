@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<dl class="portlet portletDewplayer" i18n:domain="collective.dewplayer">
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span tal:content="view/title">
+           TITLE
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+    <dd class="portletItem">
+      <object type="application/x-shockwave-flash" data="++resource++collective.dewplayer/dewplayer.swf"
+        tal:attributes="data view/player_url"
+        width="200" height="20">
+        <param name="wmode" value="transparent" />
+        <param name="movie" value="dewplayer.swf" />
+        <param name="flashvars" tal:attributes="value view/flashvars_value"/>
+      </object>
+    </dd>
+</dl>
+</html>

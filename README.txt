@@ -24,8 +24,7 @@ Installation
 ============
 
 Add collective.dewplayer to your buildout as normal. See
-http://plone.org/documentation/tutorial/buildout. Don't forget to load the
-configure.zcml file.
+http://plone.org/documentation/tutorial/buildout. 
 
 Install it throw the QuickInstaller to add a 'dewplayer' view to File content type.
 This view let's you listen to any mp3 file and can be set as default with the display 
