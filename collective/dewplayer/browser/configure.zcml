@@ -17,17 +17,48 @@
         template="file.pt"
         />
 
-    <utility zcml:condition="installed collective.portlet.itemview"
+    <browser:page
+        name="playlist.xml"
+        for="Products.ATContentTypes.interfaces.topic.IATTopic"
+        class=".playlist.TopicPlayList"
+        template="playlist.pt"
+        permission="zope2.View"
+    />
+    <browser:page
+        name="playlist.xml"
+        for="plone.folder.interfaces.IFolder"
+        class=".playlist.FolderPlayList"
+        template="playlist.pt"
+        permission="zope2.View"
+    />
+
+ <configure zcml:condition="installed collective.portlet.itemview">
+    <utility
         factory=".itemview.GalleryPortletViewEntry"
         name="dewplayer"
     />
 
-    <browser:page zcml:condition="installed collective.portlet.itemview"
+    <browser:page
         name="itemview_portlet_dewplayer"
         for="Products.ATContentTypes.interfaces.file.IATFile"
         class=".itemview.DewplayerPortletView"
         template="itemview.pt"
         permission="zope2.View"
     />
+    <browser:page
+        name="itemview_portlet_dewplayer"
+        for="Products.ATContentTypes.interfaces.topic.IATTopic"
+        class=".itemview.DewplayerListPortletView"
+        template="itemview.pt"
+        permission="zope2.View"
+    />
+    <browser:page
+        name="itemview_portlet_dewplayer"
+        for="plone.folder.interfaces.IFolder"
+        class=".itemview.DewplayerListPortletView"
+        template="itemview.pt"
+        permission="zope2.View"
+    />
+  </configure>
 
 </configure>

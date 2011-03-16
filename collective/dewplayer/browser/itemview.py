@@ -11,6 +11,7 @@ class GalleryPortletViewEntry(object):
 
 class DewplayerPortletView(BrowserView):
     """View used by collective.portlet.itemview"""
+    height = "20"
 
     def __init__(self, context, request):
         self.context = context
@@ -27,3 +28,14 @@ class DewplayerPortletView(BrowserView):
     
     def player_url(self):
         return self.portal_state.portal_url()+'/++resource++collective.dewplayer/dewplayer.swf'
+
+
+class DewplayerListPortletView(DewplayerPortletView):
+    """View used by collective.portlet.itemview"""
+    height = "200"
+    def flashvars_value(self):
+        playlist_url= self.context.absolute_url()+'/@@playlist.xml'
+        return "xml=%s&amp;showtime=1"%playlist_url
+
+    def player_url(self):
+        return self.portal_state.portal_url()+'/++resource++collective.dewplayer/dewplayer-playlist.swf'

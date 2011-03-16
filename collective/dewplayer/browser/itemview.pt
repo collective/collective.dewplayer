@@ -11,11 +11,9 @@
         <span class="portletTopRight"></span>
     </dt>
     <dd class="portletItem">
-      <object type="application/x-shockwave-flash" data="++resource++collective.dewplayer/dewplayer.swf"
-        tal:attributes="data view/player_url"
+      <object type="application/x-shockwave-flash" tal:attributes="data view/player_url; height view/height"
         width="200" height="20">
-        <param name="wmode" value="transparent" />
-        <param name="movie" value="dewplayer.swf" />
+        <param name="movie" value="" tal:attributes="value view/player_url" />
         <param name="flashvars" tal:attributes="value view/flashvars_value"/>
       </object>
     </dd>
