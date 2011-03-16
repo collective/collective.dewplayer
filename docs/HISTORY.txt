@@ -1,13 +1,16 @@
 Changelog
 =========
 
-1.1dev - Unreleased
-------------------------
+1.1 (2011-03-16)
+----------------
 
 - Add a playlist.xml view on folder and topic (xspf format) to support playlist mode
   [toutpt]
 
 - Add collective.portlet.itemview integration for file, folder and topic
+  [toutpt]
+
+- Add autoinclude entry point.
   [toutpt]
 
 1.0 - October 25, 2010
