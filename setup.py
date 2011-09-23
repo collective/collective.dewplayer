@@ -23,6 +23,8 @@ setup(name='collective.dewplayer',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.swfobject',
+          'collective.configviews',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

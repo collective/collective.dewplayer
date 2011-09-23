@@ -1,0 +1,14 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:gs="http://namespaces.zope.org/genericsetup"
+  i18n_domain="collective.dewplayer">
+        
+  <gs:upgradeStep
+    title="Upgrade collective.dewplayer 1-10"
+    description=""
+    source="1"
+    destination="10"
+    handler=".upgrades.upgrade_1_to_10"
+    profile="collective.dewplayer:default"/>
+
+</configure>

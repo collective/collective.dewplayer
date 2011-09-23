@@ -9,30 +9,71 @@
         directory="dewplayer"
         />
 
+    <include package="plone.app.contentmenu"/>
     <browser:page
         name="dewplayer"
+        menu="plone_displayviews"
+        title="Dewplayer view"
         for="Products.ATContentTypes.interface.IATFile"
-        class=".file.File"
+        class=".file.FileView"
         permission="zope2.View"
-        template="file.pt"
+        />
+    <browser:page
+        name="dewplayer_multi"
+        menu="plone_displayviews"
+        title="Dewplayer playlist view"
+        for="Products.ATContentTypes.interface.IATFile"
+        class=".file.FileMultiView"
+        permission="zope2.View"
+        />
+    <browser:page
+        name="dewplayer_streaming"
+        menu="plone_displayviews"
+        title="Dewplayer streaming view"
+        for="Products.ATContentTypes.interface.IATFile"
+        class=".file.FileStreamingView"
+        permission="zope2.View"
+        />
+    <browser:page
+        name="dewplayer_streaming"
+        menu="plone_displayviews"
+        title="Dewplayer streaming view"
+        for="Products.ATContentTypes.interface.IATLink"
+        class=".link.LinkView"
+        permission="zope2.View"
         />
 
     <browser:page
-        name="playlist.xml"
+        name="dewplayer_multi"
+        menu="plone_displayviews"
+        title="Dewplayer view"
         for="Products.ATContentTypes.interfaces.topic.IATTopic"
-        class=".playlist.TopicPlayList"
-        template="playlist.pt"
+        class=".topic.TopicView"
+        permission="zope2.View"
+        />
+    <browser:page
+        name="dewplayer_playlist.xml"
+        for="Products.ATContentTypes.interfaces.topic.IATTopic"
+        class=".topic.TopicPlayList"
         permission="zope2.View"
     />
     <browser:page
-        name="playlist.xml"
+        name="dewplayer_multi"
+        menu="plone_displayviews"
+        title="Dewplayer view"
         for="plone.folder.interfaces.IFolder"
-        class=".playlist.FolderPlayList"
-        template="playlist.pt"
+        class=".folder.FolderView"
+        permission="zope2.View"
+        template="dewplayer.pt"
+        />
+    <browser:page
+        name="dewplayer_playlist.xml"
+        for="plone.folder.interfaces.IFolder"
+        class=".folder.FolderPlayList"
         permission="zope2.View"
     />
 
- <configure zcml:condition="installed collective.portlet.itemview">
+   <configure zcml:condition="installed collective.portlet.itemview">
     <utility
         factory=".itemview.GalleryPortletViewEntry"
         name="dewplayer"
