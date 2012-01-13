@@ -4,9 +4,10 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Add support for playlist and streaming viewer. refactor existing views using collective.configviews. Now you can listen music from file, folder, topic and link (streaming).
+- Add support for playlist and streaming viewer. refactor existing views using
+  collective.configviews. Now you can listen music from file, folder, topic 
+  and link (streaming).
   [toutpt] 
-
 
 1.1 (2011-03-16)
 ----------------

@@ -63,6 +63,37 @@ class FileMultiView(FileView):
 
     settings_schema = interfaces.IDewPlayerMultiConfig
 
+class FilePlaylist():
+    """dewplayer_playlist.xml"""
+    
+    __call__ = ViewPageTemplateFile('playlist.pt')
+    
+    def title(self):
+        return self.context.Title()
+    
+    def creator(self):
+        return "creator"
+    
+    def info(self):
+        return self.context.Description()
+    
+    def tracks(self):
+        brains = self.brains()
+        tracks = []
+        for brain in brains:
+            url = brain.getURL() 
+            if url.endswith('.mp3'):
+                tracks.append({'location':url,
+                               'title':brain.Title,
+                               'creator':"creator",
+                               'info':brain.Description})
+        return tracks
+
+    def files(self):
+        data = self.context.getFile().data
+        lines = data.split('\n')
+#        for line in lines:
+#            if Line.starts
 
 class FileStreamingView(FileView):
     """Base view for *.pls files
